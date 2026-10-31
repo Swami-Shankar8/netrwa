@@ -1,0 +1,51 @@
+name: netrwa
+description: "Netrwa - Scam Shield, Phishing & Hidden Apps Safety Monitor"
+publish_to: 'none' # Private project
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # UI & Navigation
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.1.0
+
+  # Local Database & Storage (Scan history & preferences store karne ke liye)
+  shared_preferences: ^2.2.2
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # Network & API Integration
+  http: ^1.2.0
+
+  # Camera & QR Code Scanning
+  mobile_scanner: ^5.1.1
+
+  # Native Permissions Handler
+  permission_handler: ^11.3.1
+
+  # URL Launcher (Links open/check karne ke liye)
+  url_launcher: ^6.2.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.8
+
+flutter:
+  uses-material-design: true
+
+  # Asset management for icons and graphics
+  assets:
+    - assets/icons/
+    - assets/images/
+    - assets/translations/
